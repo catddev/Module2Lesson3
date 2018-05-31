@@ -18,29 +18,29 @@ void main()
 
 	if (v == 1)
 	{
-		#pragma region 1.Записать условие, которое является истинным, когда только одно из чисел X, Y и Z кратно пяти.
-				int x, y, z;
-				x = 1 + rand() % 1000;
-				y = 1 + rand() % 1000;
-				z = 1 + rand() % 1000;
+#pragma region 1.Записать условие, которое является истинным, когда только одно из чисел X, Y и Z кратно пяти.
+		int x, y, z;
+		x = 1 + rand() % 1000;
+		y = 1 + rand() % 1000;
+		z = 1 + rand() % 1000;
 
-				printf("%d - %d - %d\n", x, y, z);
+		printf("%d - %d - %d\n", x, y, z);
 
-				if (x % 5 == 0 && y % 5 != 0 && z % 5 != 0)
-				{
-					printf("условие выполнено\n");
-				}
-				else if (y % 5 == 0 && x % 5 != 0 && z % 5 != 0) {
-					printf("условие выполнено\n");
-				}
-				else if (z % 5 == 0 && x % 5 != 0 && y % 5 != 0) {
-					printf("условие выполнено");
-				}
-				else
-				{
-					printf("условие не выполнено\n");
-				}
-		#pragma endregion
+		if (x % 5 == 0 && y % 5 != 0 && z % 5 != 0)
+		{
+			printf("условие выполнено\n");
+		}
+		else if (y % 5 == 0 && x % 5 != 0 && z % 5 != 0) {
+			printf("условие выполнено\n");
+		}
+		else if (z % 5 == 0 && x % 5 != 0 && y % 5 != 0) {
+			printf("условие выполнено");
+		}
+		else
+		{
+			printf("условие не выполнено\n");
+		}
+#pragma endregion
 	}
 	else if (v == 2)
 	{
@@ -53,7 +53,7 @@ void main()
 
 		if (x > 80 || y > 80 || z > 80)
 		{
-printf("условие выполнено\n");
+			printf("условие выполнено\n");
 		}
 		else
 		{
@@ -146,7 +146,7 @@ printf("условие выполнено\n");
 	}
 
 	else if (v == 8) {
-		int a=1, b=0, c=0;
+		int a = 1, b = 0, c = 0;
 		a = 0 + rand() % 2;
 		b = 0 + rand() % 2;
 		c = 0 + rand() % 2;
@@ -176,7 +176,7 @@ printf("условие выполнено\n");
 		else {
 			printf("8d. false\n");
 		}
-		if (a|| (!b && !c)) {
+		if (a || (!b && !c)) {
 			printf("8e. true\n");
 		}
 		else {
@@ -187,9 +187,85 @@ printf("условие выполнено\n");
 	else if (v == 9) {
 		int x, y;
 
+		x = 1, y = 2;
+		if (x >= 0 || y != 4) {
+			printf("9a. true\n");
+		}
+		else {
+			printf("9a. false\n");
+		}
 		if (x >= 0 && y != 4) {
+			printf("9b. true\n");
+		}
+		else {
+			printf("9b. false\n");
+		}
+		x = 2, y = 1;
+		if (x*y != 0 && y > x) {
+			printf("9c. true\n");
+		}
+		else {
+			printf("9c. false\n");
+		}
+		if (x*y != 0 || y > x) {
+			printf("9c. true\n");
+		}
+		else {
+			printf("9c. false\n");
 		}
 	}
 
+	else if (v == 10) {
+		int x, y;
+		x = 0 + rand() % 2;
+		y = 0 + rand() % 2;
+		printf("x=%d - y=%d\n", x, y);
 
+		if (!(x || y)) {
+			printf("10a. true\n");
+		}
+		else {
+			printf("10a. false\n");
+		}
+		if (!x && y) {
+			printf("10b. true\n");
+		}
+		else {
+			printf("10b. false\n");
+		}
+		if (x && !y) {
+			printf("10c. true\n");
+		}
+		else {
+			printf("10c. false\n");
+		}
+	}
+	else if (v == 11) {
+		int x, y;
+		x = 0 + rand() % 2;
+		y = 0 + rand() % 2;
+		printf("x=%d - y=%d\n", x, y);
+
+		if (!(x && !y)||x) {
+			printf("11a. true\n");
+		}
+		else {
+			printf("11a. false\n");
+		}
+		if (y && !x || !y) {
+			printf("11b. true\n");
+		}
+		else {
+			printf("11b. false\n");
+		}
+		if (!y && !x || y) {
+			printf("11c. true\n");
+		}
+		else {
+			printf("11c. false\n");
+		}
+	}
+	else if (v == 12) {
+
+	}
 }
