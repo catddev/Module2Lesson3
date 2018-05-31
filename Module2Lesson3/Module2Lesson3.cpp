@@ -153,31 +153,43 @@ printf("условие выполнено\n");
 		printf("a=%d b=%d c=%d\n", a, b, c);
 
 		if (a || b && !c) {
-			printf("истина a.\n");
-		}
-		else if (!a && !b) {
-			printf("истина b.\n");
-		}
-		else if ((!a && !c) || b) {
-			printf("истина c.\n");
-		}
-		else if (a && !b || c) {
-			printf("истина d.\n");
-		}
-		else if (a|| (!b && !c)) {
-			printf("истина e.\n");
+			printf("8a. true\n");
 		}
 		else {
-			printf("ложь\n");
+			printf("8a. false\n");
+		}
+		if (!a && !b) {
+			printf("8b. true\n");
+		}
+		else {
+			printf("8b. false\n");
+		}
+		if ((!a && !c) || b) {
+			printf("8c. true\n");
+		}
+		else {
+			printf("8c. false\n");
+		}
+		if (a && !b || c) {
+			printf("8d. true\n");
+		}
+		else {
+			printf("8d. false\n");
+		}
+		if (a|| (!b && !c)) {
+			printf("8e. true\n");
+		}
+		else {
+			printf("8e. false\n");
 		}
 	}
 
 	else if (v == 9) {
 		int x, y;
-	
-		if (x>=0&&y!=4)
-	}
 
+		if (x >= 0 && y != 4) {
+		}
+	}
 
 
 }
