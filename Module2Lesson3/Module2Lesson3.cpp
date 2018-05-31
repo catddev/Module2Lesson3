@@ -266,6 +266,136 @@ void main()
 		}
 	}
 	else if (v == 12) {
+		int x, y, z;
+		x = -1000 + rand() % 1000;
+		y = -1000 + rand() % 1000;
+		printf("x=%d - y=%d\n", x, y);
 
+		if (x > 2 && y > 3) {
+			printf("12a.i true\n");
+		}
+		else {
+			printf("12a.i false\n");
+		}
+		if (x>1 || y>-2) {
+			printf("12a.ii true\n");
+		}
+		else {
+			printf("12a.ii false\n");
+		}
+		if (x>0 && y<5) {
+			printf("12a.iii true\n");
+		}
+		else {
+			printf("12a.iii false\n");
+		}
+		if (x > 3 || x<-1) {
+			printf("12a.iv true\n");
+		}
+		else {
+			printf("12a.iv false\n");
+		}
+		if (x>3 && x<10) {
+			printf("12a.v true\n");
+		}
+		else {
+			printf("12a.v false\n\n\n");
+		}
+
+		int a, b, c;
+		a = -100 + rand() % 1000;
+		b = -100 + rand() % 1000;
+		c = -100 + rand() % 1000;
+
+		printf("a=%d - b=%d - c=%d \n", a, b, c);
+
+		if (a > 100 && b > 100) {
+			printf("12b.i true\n");
+		}
+		else {
+			printf("12b.i false\n");
+		}
+		if (a%2==0 && b%2!=0 || a%2!=0 && b%2==0) {
+			printf("12b.ii true\n");
+		}
+		else {
+			printf("12b.ii false\n");
+		}
+		if (a>0||b>0) {
+			printf("12b.iii true\n");
+		}
+		else {
+			printf("12b.iii false\n");
+		}
+		if (a%3==0 && b%3==0 && c%3==0) {
+			printf("12b.iv true\n");
+		}
+		else {
+			printf("12b.iv false\n");
+		}
+		if ((a<50&&b>=50&&c>=50)||(b<50&&a>=50&&c>=50)||(c<50&&b>=50&&a>=50)){
+			printf("12b.v true\n");
+		}
+		else {
+			printf("12b.v false\n");
+		}
+
+		if (a<0||b<0||c<0) {
+			printf("12b.vi true\n");
+		}
+		else {
+			printf("12b.vi false\n\n\n");
+		}
+
+		x = -1000 + rand() % 1000;
+		y = -1000 + rand() % 1000;
+		z = -1000 + rand() % 1000;
+		
+			printf("x=%d - y=%d\n", x, y);
+
+		if (x%2!=0 && y%2!=0) {
+			printf("12c.i true\n");
+		}
+		else {
+			printf("12c.i false\n");
+		}
+		if ((x<20 && y>=20)||(y<20 && x>=20)) {
+			printf("12c.ii true\n");
+		}
+		else {
+			printf("12c.ii false\n");
+		}
+		if (x==0||y==0) {
+			printf("12c.iii true\n");
+		}
+		else {
+			printf("12b.iii false\n");
+		}
+		if (x<0 && y<0 && z<0) {
+			printf("12c.iv true\n");
+		}
+		else {
+			printf("12c.iv false\n");
+		}
+		if (x % 5 == 0 && y % 5 != 0 && z % 5 != 0) {
+			printf("12c.v true\n");
+		}
+		else if (y % 5 == 0 && x % 5 != 0 && z % 5 != 0) {
+			printf("12c.v true\n");
+		}
+		else if (z % 5 == 0 && x % 5 != 0 && y % 5 != 0) {
+			printf("12c.v true\n");
+		}
+
+		else {
+			printf("12c.v false\n");
+		}
+
+		if (x>100 || y>100 ||z>100) {
+			printf("12c.vi true\n");
+		}
+		else {
+			printf("12c.vi false\n\n");
+		}
 	}
 }
