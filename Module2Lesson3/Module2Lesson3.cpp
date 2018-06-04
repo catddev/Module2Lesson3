@@ -403,4 +403,7 @@ void main()
 			printf("12c.vi false\n\n");
 		}
 	}
+	else {
+		printf("нет заданий\n");
+	}
 }
