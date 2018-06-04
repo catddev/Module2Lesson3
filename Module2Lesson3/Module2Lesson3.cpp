@@ -92,7 +92,7 @@ void main()
 		}
 #pragma endregion
 	}
-	else if (v == 5) {
+	else if (v == 5) { 
 		int a, b, c, d;
 		a = 1 + rand() % 1000;
 		b = 1 + rand() % 1000;
